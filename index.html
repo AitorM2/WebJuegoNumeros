@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego saber y ganar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo-web">Juego de saber y ganar</h1>
+    </header>
+
+    <section>
+        <h2 class="titulo-presentacion">Bienvenido al juego de saber y ganar</h2>
+
+        <p class="desc_juego">En este juego vas a recibir x preguntas aleatorias sobre matematicas, se competitivo e
+            intenta superar las puntuaciones, pulsa en el boton para comenzar a jugar:</p>
+
+        <div id="Iniciar_Cfg">
+            <button onclick="show_config()" id="comenzar_cfg">Comenzar configuración</button>
+        </div>
+    </section>
+
+    <section id="cfg_partida">
+        <div>
+            <h2 class="titulo-cfg">Datos de configuración de la partida:</h2>
+
+            <label for="Modos_juego" class="texto-elecciones">Tipo de partida:</label>
+
+            <select id="Modos_juego">
+                <option value="3">Partida rápida (3 rondas)</option>
+                <option value="5">Partida corta (5 rondas)</option>
+                <option value="10">Partida normal (10 rondas)</option>
+                <option value="20">Partida larga (20 rondas)</option>
+            </select><br><br>
+
+            <label for="numero_jugadores" class="texto-elecciones">Número de jugadores (mínimo: 1 y máximo: 6):</label>
+
+            <input type="number" id="numero_jugadores" min="1" max="6">
+
+            <div id="jugadores"></div>
+
+            <button id="Iniciar_Partida" onclick="Iniciar_Partida ()">Iniciar partida</button>
+        </div>
+    </section>
+
+    <section id="mostrar_ranking">
+        <div>
+            <h2 class="titulo-partida">Partida</h2>
+            <p id="informacion-partida"></p>
+            <table id="tabla-ranking"></table>
+            <button id="siguiente_ronda" onclick="next_round()">Seguir jugando</button>
+            <button id="fin_ronda" onclick="restart()">Finalizar Partida</button>
+        </div>
+    </section>
+
+    <section id="cfg_ranking">
+        <div>
+            <h2 class="titulo-ranking">Ranking</h2>
+            <table id="mostrar-ranking"></table>
+            <button id="btn_restart" onclick="restart()">Volver a jugar</button>
+        </div>
+    </section>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
