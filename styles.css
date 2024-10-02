@@ -1,0 +1,268 @@
+@font-face {
+    font-family: 'fuente1';
+    src: url('./fonts/Team_401.ttf');
+}
+
+@font-face {
+    font-family: 'fuente2';
+    src: url('./fonts/BoxedRound.ttf');
+}
+
+@font-face {
+    font-family: 'fuente3';
+    src: url('./fonts/Jackpot.ttf');
+}
+
+/* Configuraciones generales */
+
+body {
+    background-image: linear-gradient(125deg, #01011d 20%, #90e0ef 100%);
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: 1920px 1200px;
+}
+
+.titulo-web {
+    text-align: center;
+    color: #d2d2d2;
+    font-style: italic;
+    letter-spacing: 15px;
+    font-size: 46px;
+    font-family: 'fuente1';
+    animation: fondo_colores 3s infinite ease-in-out;
+    margin-bottom: 50px;
+}
+
+#cfg_partida, #mostrar_ranking, #cfg_ranking {
+    display: none;
+}
+
+/* Fin configuraciones generales */
+
+/* Seccion presentacion e inicio del juego */
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #1b263b;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #8eecf5;
+    margin-top: 45px;
+}
+
+.titulo-presentacion {
+    font-family: 'fuente3';
+    color: #fff;
+    text-shadow: 0 2px 2px #000;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.desc_juego {
+    font-family: 'fuente2';
+    color: #fff;
+    background-color: #00b4d843;
+    border: 2px solid #0096c7;
+    border-radius: 5px;
+    padding: 3px 8px;
+    font-size: 17px;
+    width: fit-content;
+    margin-left: 10px;
+}
+
+#comenzar_cfg {
+    margin-left: 40px;
+    color: #fff;
+    background: #38b00061;
+    border: 2px solid #008000;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'fuente2';
+    transition: .6s;
+}
+
+#comenzar_cfg:hover {
+    font-size: 17px;
+    transition: .5s;
+}
+
+
+/* Fin seccion presentacion e inicio del juego*/
+
+
+
+/* Seccion configuración del juego */
+
+.titulo-cfg {
+    color: #fff;
+    font-family: 'fuente2';
+    text-shadow: 0 2px 2px #000;
+    font-size: 25px;
+    background-color: #d000005b;
+    border: 2px solid #9d0208;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 5px 8px;
+}
+
+.texto-elecciones {
+    color: #fff;
+    font-family: 'fuente2';
+    text-shadow: 0 2px 2px #000;
+    letter-spacing: .5px;
+}
+
+#Modos_juego {
+    color: #fff;
+    background: #3c096c;
+    border: 2px solid rgb(111, 0, 221);
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'fuente2';
+}
+
+#Iniciar_Partida {
+    margin-top: 15px;
+    margin-left: 40px;
+    color: #fff;
+    background: #068e6975;
+    border: 2px solid #06d6a0;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'fuente2';
+    transition: .6s;
+}
+
+#Iniciar_Partida:hover {
+    font-size: 17px;
+    transition: .5s;
+}
+
+/* Fin seccion configuración del juego */
+
+/* Sección progreso partida */
+
+.titulo-partida {
+    color: #fff;
+    font-family: 'fuente2';
+    text-shadow: 0 2px 2px #000;
+    font-size: 25px;
+    background-color: #98527768;
+    border: 2px solid #985277;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 4px 2px;
+}
+
+#siguiente_ronda {
+    margin-top: 15px;
+    margin-left: 40px;
+    color: #fff;
+    background: #e4ff1a51;
+    border: 2px solid #e4ff1a;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'fuente2';
+    transition: .6s;
+}
+
+#siguiente_ronda:hover {
+    font-size: 17px;
+    transition: .5s;
+}
+
+#fin_ronda {
+    margin-top: 15px;
+    margin-left: 8px;
+    color: #fff;
+    background: #d5294075;
+    border: 2px solid #d52941;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'fuente2';
+    transition: .6s;
+}
+
+#fin_ronda:hover {
+    font-size: 17px;
+    transition: .5s;
+}
+
+#informacion-partida {
+    color: #fff;
+    font-family: 'fuente2';
+    text-shadow: 0 2px 2px #000;
+    text-align: center;
+}
+
+
+/* Fin sección partida */
+
+/* Sección de mostar el ranking */
+
+.titulo-ranking {
+    color: #fff;
+    font-family: 'fuente2';
+    text-shadow: 0 2px 2px #000;
+    font-size: 25px;
+    background-color: #ffc40055;
+    border: 2px solid #ffc300;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 4px 2px;
+}
+
+table {
+    width: 50%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 2px solid #2b9348;
+    background: #2b934831;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-family: 'fuente2';
+    text-shadow: 0 2px 2px #000;
+}
+
+#btn_restart {
+    margin-top: 15px;
+    margin-left: 40px;
+    color: #fff;
+    background: #74f0ee57;
+    border: 2px solid #74f0ed;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'fuente2';
+    transition: .6s;
+}
+
+#btn_restart:hover {
+    font-size: 17px;
+    transition: .5s;
+}
+/* Fin sección de mostar el ranking */
+
+
+/* Animaciones*/
+
+@keyframes fondo_colores {
+
+    0% {
+       text-shadow: 0 2px 2px #7b2cbf; 
+    }
+    
+    50% {
+        text-shadow: 0 8px 8px #9d4edd;
+    }
+
+    100% {
+        text-shadow: 0 3px 3px #6930c3;
+    }
+}
+
+/* Fin animaciones */
